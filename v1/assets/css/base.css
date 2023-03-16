@@ -13,9 +13,9 @@
 }
 
 html {
+    font-size: 62.5%;
     font-family: 'Roboto', sans-serif;
     color: var(--text-color);
-    font-size: 24px;
 }
 
 body {
@@ -23,7 +23,7 @@ body {
 }
 
 .app {
-    margin: 0 200px;
+    margin: 0 10%;
 }
 
 .header {
@@ -36,15 +36,35 @@ body {
 .header-logo {
     text-decoration: none;
     color: var(--text-color);
-    font-size: 48px;
+    font-size: 4.5rem;
     font-weight: 600;
 }
 
-.header__navbar-link {
+
+.header__navbar-icon {
+    color: var(--text-color);
+    margin: 0 20px;
+    display: none !important;
+    font-size: 3.5rem;
+}
+
+.header__navbar-icon:hover {
+    color: var(--primary-color);
+}
+
+.header__navbar-list {
+    list-style: none;
+}
+
+.header__navbar-item {
     margin-left: 50px;
+    display: inline;
+}
+
+.header__navbar-link {
     color: var(--text-color);
     text-decoration: none;
-    font-size: 40px;
+    font-size: 3.5rem;
     font-weight: 500;
     transition: all 0.2s ease;
 }
@@ -62,4 +82,31 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
+}
+
+.btn {
+    background-color: transparent;
+    height: 34px;
+    text-decoration: none;
+    border: none;
+    border-radius: 2px;
+    font-size: 1.5rem;
+    padding: 0 12px;
+    outline: none;
+    cursor: pointer;
+    color: var(--background-color);
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    line-height: 1.6rem;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
 }

@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="assets/css/base.css">
     <link rel="stylesheet" href="assets/css/index.css">
+    <link rel="stylesheet" href="assets/css/responsive.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
         integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -19,9 +20,13 @@
             <a href="#" class="header-logo">Cong Hoangg.</a>
 
             <nav class="header__navbar">
-                <a href="#" class="header__navbar-link header__navbar-link--active">Home</a>
-                <a href="#" class="header__navbar-link">About</a>
-                <a href="#" class="header__navbar-link">Contact</a>
+                <button class="btn header__navbar-btn-js"><i class="header__navbar-icon fa-solid fa-bars"></i></button>
+                <ul class="header__navbar-list">
+                    <li class="header__navbar-item"><a href="#"
+                            class="header__navbar-link header__navbar-link--active">Home</a></li>
+                    <li class="header__navbar-item"><a href="#" class="header__navbar-link">About</a></li>
+                    <li class="header__navbar-item"><a href="#" class="header__navbar-link">Contact</a></li>
+                </ul>
             </nav>
         </header>
 
@@ -30,7 +35,7 @@
                 <h3 class="content__h3">Hello, It's Me</h3>
                 <h1 class="content__h1 content__h1--primary">Cong Hoang</h1>
                 <h3 class="content__h3">And I'm a <span class="content__h3--primary">Frontend Developer.</span></h3>
-                <p class="content__p">Mot thang hoc sinh cap 2 tai ... <span class="content__h3--primary">:)</span></p>
+                <p class="content__p">Mot thang hoc sinh cap 2 tai ... :)</p>
                 <ul class="content-socical">
                     <li class="content-socical-link"><a href="https://fb.com/elian.dev9"><i
                                 class="content-socical-icon fa-brands fa-square-facebook"></i></a></li>
@@ -41,6 +46,7 @@
             </div>
         </div>
     </div>
+    <script src="assets/js/index.js"></script>
 </body>
 
 </html>
